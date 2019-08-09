@@ -88,5 +88,6 @@ tracker.close()
 ## Troubleshooting
 
 * Make sure the IntelliGaze Server is running! Without it, the Python wrapper will have nothing to talk to.
-* Make sure you install the IntelliGaze Server! You can download it from the IntelliGaze by [Alea Technologies website](https://www.intelligaze.com/en/support/download)
+* Make sure you install the IntelliGaze Server! You can download it from the IntelliGaze by [Alea Technologies website](https://www.intelligaze.com/en/support/download).
+* Make sure that you are running a Microsoft Windows operating system (tested on Windows 7 and 10). Linux and OS X support is not currently available.
 
