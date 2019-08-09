@@ -24,11 +24,11 @@ After installation, you can import the Alea package into your Python script:
 import alea
 ```
 
-#### Recording data to file
+### Recording data to file
 
 You can then use the AleaTracker class for quick and easy interfacing with your eye tracker. For example, the following script initialises a connection with the IntelliGaze Server, calibrates the eye tracker, and records 10 seconds of data into a text file.
 
-```
+``` .python
 import time
 from alea import AleaTracker
 
@@ -54,13 +54,13 @@ tracker.stop_recording()
 tracker.close()
 ```
 
-#### Streaming samples for gaze-contingent functionality
+### Streaming samples for gaze-contingent functionality
 
 You can use AleaTracker's `sample` method to obtain the corrent gaze coordinates, as well as the current pupil size. While a connection is open, this will always return the latest available sample.
 
 **NOTE: You do not have to be recording to use the `sample` method, and using the `sample` method does not affect recording. You can do both at the same time, but you don't have to.**
 
-```
+``` .python
 import time
 from alea import AleaTracker
 
