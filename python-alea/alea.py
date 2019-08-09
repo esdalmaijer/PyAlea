@@ -6,7 +6,6 @@ import ctypes
 from multiprocessing import Queue
 from threading import Event, Lock, Thread
 
-
 # Auto-detect whether we're running 32 or 64 bit, and decide which DLL to load.
 if sys.maxsize > 2**32:
     dll_name = "CEtAPIx64.dll"
