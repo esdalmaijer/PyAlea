@@ -1,4 +1,4 @@
 /build
 /dist
 /python_alea.egg-info
-./upload_to_pypi.txt
+/upload_to_pypi.txt
