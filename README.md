@@ -70,7 +70,7 @@ from alea import AleaTracker
 alea_api_key = ""
 
 # Initialise the connection to the IntelliGaze Server.
-tracker = AleaTracker(alea_api_key, file_path="my_data.tsv")
+tracker = AleaTracker(alea_api_key)
 
 # Calibrate the eye tracker, using the default options.
 tracker.calibrate()
@@ -81,7 +81,11 @@ while time.time() - t0 < 10.0:
     # Get the latest sample
     time_stamp, gaze_x, gaze_y, pupil_size = tracker.sample()
     # Print the current sample to the terminal.
-    print("t=%.3f, x=%.2f, y=%.2f, s=%.2f" % (time_stamp, gaze_x, gaze_y, pupil_size))
+    print("t={}, x={}, y={}, s={}".format( \
+        round(time_stamp, 3), \
+        round(gaze_x, 2), \
+        round(gaze_y, 2), \
+        round(pupil_size, 2)))
     # Wait for 33 milliseconds.
     time.sleep(0.033)
 
