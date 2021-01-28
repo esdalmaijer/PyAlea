@@ -32,9 +32,11 @@ You can then use the AleaTracker class for quick and easy interfacing with your 
 import time
 from alea import AleaTracker
 
-# Initialise the connection to the IntelliGaze Server,
-# using the PyGaze alea code.
-tracker = AleaTracker("pg=12", file_path="my_data.tsv")
+# Add your Alea API key here:
+alea_api_key = ""
+
+# Initialise the connection to the IntelliGaze Server.
+tracker = AleaTracker(alea_api_key, file_path="my_data.tsv")
 
 # Calibrate the eye tracker, using the default options.
 tracker.calibrate()
@@ -64,9 +66,11 @@ You can use AleaTracker's `sample` method to obtain the corrent gaze coordinates
 import time
 from alea import AleaTracker
 
-# Initialise the connection to the IntelliGaze Server,
-# using the PyGaze alea code.
-tracker = AleaTracker("pg=12", file_path="my_data.tsv")
+# Add your Alea API key here:
+alea_api_key = ""
+
+# Initialise the connection to the IntelliGaze Server.
+tracker = AleaTracker(alea_api_key, file_path="my_data.tsv")
 
 # Calibrate the eye tracker, using the default options.
 tracker.calibrate()

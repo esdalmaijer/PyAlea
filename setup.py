@@ -3,6 +3,9 @@ import setuptools
 
 with open("README.md", "r") as fh:
     long_description = fh.read()
+# Stupid bug in twine ignores long_description_content_type, so just refer
+# people to GitHub.
+long_description = "A bug in twine prevents reading Markdown files, so please read the README at https://github.com/esdalmaijer/PyAlea"
 
 setuptools.setup(
     name="python-alea",
